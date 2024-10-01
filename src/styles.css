@@ -14,3 +14,23 @@ body {
    
 }
 
+header {
+    height: 5em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar--main {
+    height: 90%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+
+.button {
+    height: 3em;
+    width: 6em;
+    font-size: 1.1em;
+    background-color: white;
+    color: var(--primary-green);
+    border: none;
+}
