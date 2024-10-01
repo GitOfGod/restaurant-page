@@ -1,2 +1,2 @@
 import "./styles.css";
-alert("Connection working");
+console.log("Connection working");
