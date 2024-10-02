@@ -1,11 +1,13 @@
 :root {
     --primary-green: #022c22;
     --light-grey: #e2e8f0;
+    --brown: #713f12;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -17,7 +19,6 @@ body {
 }
 
 header {
-    height: 5em;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -33,6 +34,29 @@ header {
     width: 6em;
     font-size: 1.1em;
     background-color: white;
-    color: var(--primary-green);
+    color: var(--brown);
     border: none;
+}
+
+#content {
+    background-image: url(bakery.jpg);
+    background-size: cover;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h1 {
+    font-size: 8em;
+}
+
+.main--headline {
+    font-size: 1.5em;
 }
