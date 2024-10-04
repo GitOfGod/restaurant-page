@@ -1,4 +1,4 @@
-export const pageLoad = ( function() {
+export const homepage = ( function() {
     const content = document.querySelector("#content");
     const main = document.createElement("div");
     main.classList.add("main");

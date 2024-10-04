@@ -1,3 +1,3 @@
 import "./styles.css";
-import "./initial-page-load";
+/**import "./homepage";**/
 console.log("Connection working");
