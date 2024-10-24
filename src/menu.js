@@ -14,26 +14,34 @@ export const menu = ( function() {
     menu__content.appendChild(menu__grid);
 
     //menu categories
-    const menu__category__bread = document.createElement('div');
-    menu__category__bread.classList.add('menu__category--title');
-    menu__category__bread.textContent = "Bread";
+    const bread_category = document.createElement('div');
+    bread_category.classList.add('menu__category');
+    const bread_title = document.createElement('h3');
+    bread_title.textContent = "Bread";
+    bread_category.appendChild(bread_title)
 
-    const menu__category__cakes = document.createElement('div');
-    menu__category__cakes.classList.add('menu__category--title');
-    menu__category__cakes.textContent = "Cakes"; 
+    const cakes_category = document.createElement('div');
+    cakes_category.classList.add('menu__category');
+    const cakes_title = document.createElement('h3');
+    cakes_title.textContent = "Cakes";
+    cakes_category.appendChild(cakes_title);
 
-    const menu__category__drinks = document.createElement('div');
-    menu__category__drinks.classList.add('menu__category--title');
-    menu__category__drinks.textContent = "Drinks";
+    const drinks_category = document.createElement('div');
+    drinks_category.classList.add('menu__category');
+    const drinks_title = document.createElement('h3');
+    drinks_title.textContent = "Drinks";
+    drinks_category.appendChild(drinks_title);
 
-    const menu__category__special = document.createElement('div');
-    menu__category__special.classList.add('menu__category--title');
-    menu__category__special.textContent = "Specials";
+    const special_category = document.createElement('div');
+    special_category.classList.add('menu__category');
+    const special_title = document.createElement('h3');
+    special_title.textContent = "Specials";
+    special_category.appendChild(special_title);
 
-    menu__content.appendChild(menu__category__bread);
-    menu__content.appendChild(menu__category__cakes);
-    menu__content.appendChild(menu__category__drinks);
-    menu__content.appendChild(menu__category__special);
+    menu__content.appendChild(bread_category);
+    menu__content.appendChild(cakes_category);
+    menu__content.appendChild(drinks_category);
+    menu__content.appendChild(special_category);
 
     content.appendChild(menu__content);
     
