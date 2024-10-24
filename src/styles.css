@@ -2,6 +2,7 @@
     --primary-green: #022c22;
     --light-grey: #e2e8f0;
     --brown: #713f12;
+    --light-brown: rgba(113, 63, 18, 0.1);
 }
 
 *, *::before, *::after {
@@ -61,8 +62,22 @@ header {
     justify-content: center;
 }
 
+/*header sizes*/
 h1 {
     font-size: 8em;
+}
+
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+ 
+h4 {
+    font-size: 1em;
 }
 
 .main--headline {
