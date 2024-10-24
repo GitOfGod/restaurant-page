@@ -84,3 +84,53 @@ h4 {
     font-size: 1.5em;
 }
 
+.menu {
+    width: 100%;
+ }
+ 
+.menu__content {
+    height: 85%;
+    width: 90%;
+    background-color: white;
+    border-radius: 16px;
+    display: flex; 
+    flex-direction: column;   
+    overflow: hidden;
+    margin: 4em 0em 4em 0em;
+ 
+ 
+}
+ 
+.menu__title {
+    color: var(--brown);
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+ 
+ 
+.menu__grid {
+    padding: 12px;
+    height: 90%;
+    background-color: var(--light-brown);
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+ 
+}
+
+.menu__category {
+    
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu__category--title{
+    padding-bottom: 12px;
+}
