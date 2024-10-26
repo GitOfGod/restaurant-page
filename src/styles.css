@@ -103,7 +103,7 @@ h4 {
  
 .menu__title {
     color: var(--brown);
-    height: 10%;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;

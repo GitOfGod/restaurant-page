@@ -7,7 +7,7 @@ export const menu = ( function() {
 
     menu.className = 'menu';
     menu__content.classList.add('menu__content');
-    menu__title.classList.add('menu__tile');
+    menu__title.classList.add('menu__title');
     menu__grid.classList.add('menu__grid');
 
     menu__title.textContent = "Menu";
