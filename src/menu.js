@@ -32,6 +32,27 @@ export const menu = ( function() {
     const drinks_category = createMenuCategory("Drinks");
     const special_category = createMenuCategory("Specials");
 
+    function createMenuItem(category, title, description, price) {
+        const menu_item = document.createElement('div');
+        const item_title = document.createElement('h4');
+        const item_desc = document.createElement('p');
+        const item_price = document.createElement('p');
+        menu_item.classList.add('menu__item');
+        item_title.classList.add('menu__item--title');
+        item_desc.classList.add('menu__item--desc');
+        item_price.classList.add('menu__item--price');
+        item_title.textContent = title;
+        item_desc.textContent = description;
+        item_price.textContent = price;
+        menu_item.appendChild(item_title);
+        menu_item.appendChild(item_desc);
+        menu_item.appendChild(item_price);
+        category.appendChild(menu_item);
+    }
+
+    
+
+
     menu.appendChild(menu__content);
     content.appendChild(menu);
 
