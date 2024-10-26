@@ -50,7 +50,18 @@ export const menu = ( function() {
         category.appendChild(menu_item);
     }
 
+    createMenuItem(bread_category, 'White Loaf', 'Our bread is made from the finest flour', '£4.75');
+    createMenuItem(bread_category, 'Tiger Loaf', 'Our bread is made from the finest flour', '£4.75');
+    createMenuItem(bread_category, 'Brioche Loaf', 'Our bread is made from the finest flour', '£4.75');
+
+    createMenuItem(cakes_category, 'Victoria Sponge', 'Our cakes are made from quality ingredients', '£12.99');
+    createMenuItem(cakes_category, 'Chocolate Delight', 'Our cakes are made from quality ingredients', '£4.99');
+
+    createMenuItem(drinks_category, 'Cappuccino', 'Our drinks are made from quality ingredients', '£2.99');
+    createMenuItem(drinks_category, 'Americano', 'Our drinks are made from quality ingredients', '£2.99');
     
+    createMenuItem(special_category, 'Ekima Special', 'Our drinks are made from quality ingredients', '£5.99');
+
 
 
     menu.appendChild(menu__content);
