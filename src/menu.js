@@ -1,9 +1,11 @@
 export const menu = ( function() {
     const content = document.querySelector('#content');
+    const menu = document.createElement('div');
     const menu__content = document.createElement('div');
-    const menu__title = document.createElement('h1');
+    const menu__title = document.createElement('h2');
     const menu__grid = document.createElement('div');
 
+    menu.className = 'menu';
     menu__content.classList.add('menu__content');
     menu__title.classList.add('menu__tile');
     menu__grid.classList.add('menu__grid');
@@ -14,37 +16,24 @@ export const menu = ( function() {
     menu__content.appendChild(menu__grid);
 
     //menu categories
-    const bread_category = document.createElement('div');
-    bread_category.classList.add('menu__category');
-    const bread_title = document.createElement('h3');
-    bread_title.textContent = "Bread";
-    bread_category.appendChild(bread_title)
+    function createMenuCategory(category) {
+        const categoryContainer= document.createElement('div');
+        categoryContainer.classList.add('menu_category');
+        const categoryTitle = document.createElement('h3');
+        categoryTitle.textContent = category;
+        categoryContainer.appendChild(categoryTitle);
+        menu__content.appendChild(categoryContainer);
+        return categoryContainer;
 
-    const cakes_category = document.createElement('div');
-    cakes_category.classList.add('menu__category');
-    const cakes_title = document.createElement('h3');
-    cakes_title.textContent = "Cakes";
-    cakes_category.appendChild(cakes_title);
+    }
 
-    const drinks_category = document.createElement('div');
-    drinks_category.classList.add('menu__category');
-    const drinks_title = document.createElement('h3');
-    drinks_title.textContent = "Drinks";
-    drinks_category.appendChild(drinks_title);
+    const bread_category = createMenuCategory("Bread");
+    const cakes_category = createMenuCategory("Cakes");
+    const drinks_category = createMenuCategory("Drinks");
+    const special_category = createMenuCategory("Specials");
 
-    const special_category = document.createElement('div');
-    special_category.classList.add('menu__category');
-    const special_title = document.createElement('h3');
-    special_title.textContent = "Specials";
-    special_category.appendChild(special_title);
-
-    menu__content.appendChild(bread_category);
-    menu__content.appendChild(cakes_category);
-    menu__content.appendChild(drinks_category);
-    menu__content.appendChild(special_category);
-
-    content.appendChild(menu__content);
-    
+    menu.appendChild(menu__content);
+    content.appendChild(menu);
 
 
 }
