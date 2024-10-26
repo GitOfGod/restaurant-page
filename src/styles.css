@@ -132,5 +132,31 @@ h4 {
 }
 
 .menu__category--title{
-    padding-bottom: 12px;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
+}
+
+.menu__item {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu__item--desc {
+    color: #525252;
+}
+
+.menu__item--price {
+    width: 100%;
+    font-weight: bold;
+}
+
+.menu__item p {
+    font-size: 0.9em;
 }
