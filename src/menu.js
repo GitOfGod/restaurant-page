@@ -19,10 +19,12 @@ export const menu = ( function() {
     function createMenuCategory(category) {
         const categoryContainer= document.createElement('div');
         categoryContainer.classList.add('menu_category');
+
         const categoryTitle = document.createElement('h3');
+        categoryTitle.classList.add('menu__category--title');
         categoryTitle.textContent = category;
         categoryContainer.appendChild(categoryTitle);
-        menu__content.appendChild(categoryContainer);
+        menu__grid.appendChild(categoryContainer);
         return categoryContainer;
 
     }
