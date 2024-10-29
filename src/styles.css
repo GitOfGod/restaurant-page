@@ -40,6 +40,8 @@ header {
 }
 
 #content {
+    min-height: 100vh;
+    min-width: 100vw;
     flex-grow: 1;
     background-image: url(bakery.jpg);
     background-size: cover;
@@ -54,9 +56,10 @@ header {
     color: white;
 }
 
-.main, .menu {
+.main, .menu, .contact {
     position:absolute;
     height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
@@ -85,11 +88,8 @@ h4 {
     font-size: 1.5em;
 }
 
-.menu {
-    width: 100%;
- }
- 
-.menu__content {
+
+.menu__content, .contact_content {
     height: 85%;
     width: 90%;
     background-color: white;
@@ -101,7 +101,7 @@ h4 {
  
  
 }
- 
+
 .menu__title {
     color: var(--brown);
     height: 80px;
