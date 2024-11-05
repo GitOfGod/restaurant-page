@@ -16,8 +16,8 @@ export const contactPage = ( function() {
     const phoneNumber = createAnElement(phone, 'p', 'phone__number', '020 1234 5678');
 
     const address = createAnElement(phoneAddress, 'div', 'address');
-    const addressTitle = createAnElement(address, 'h4', 'address_title', 'Address');
-    const addressContent = createAnElement(address, 'p', 'address_content', '1 Anywhere Street, Anycity, London');
+    const addressTitle = createAnElement(address, 'h4', 'address__title', 'Address');
+    const addressContent = createAnElement(address, 'p', 'address__content', '1 Anywhere Street, Anycity, London');
 
     const imageContainer = createAnElement(contactMain, 'div', 'imageContainer');
     const image = createAnElement(imageContainer,'img', 'contactImg');
