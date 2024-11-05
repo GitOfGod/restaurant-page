@@ -38,4 +38,4 @@ export const menu = ( function() {
     
     createMenuItem(special_category, 'Ekima Special', 'Our drinks are made from quality ingredients', '£5.99');
 }
-)();
+);

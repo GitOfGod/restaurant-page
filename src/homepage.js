@@ -7,4 +7,4 @@ export const homepage = ( function() {
     const p = createAnElement(main, "p", "main--headline", "A place you can have a healthy relationship with Food");
 }
 
-)();
+);
