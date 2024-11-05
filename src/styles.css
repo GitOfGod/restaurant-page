@@ -39,6 +39,11 @@ header {
     border: none;
 }
 
+.button:hover {
+    background-color: var(--light-brown);
+    border-radius: 16px;
+}
+
 #content {
     min-height: 100vh;
     min-width: 100vw;
