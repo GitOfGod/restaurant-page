@@ -102,7 +102,7 @@ h4 {
  
 }
 
-.menu__title {
+.menu__title, .contact__title {
     color: var(--brown);
     height: 80px;
     display: flex;
@@ -111,16 +111,19 @@ h4 {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
  
- 
-.menu__grid {
+
+.menu__grid, .contact__main {
     padding: 12px;
     height: 90%;
     background-color: var(--light-brown);
+ 
+}
+
+.menu__grid {
     overflow-y: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
- 
 }
 
 .menu__category {
@@ -160,4 +163,27 @@ h4 {
 
 .menu__item p {
     font-size: 0.9em;
+}
+
+
+/* Contact Page Styles */
+
+.contact__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.contactImg {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.imageContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
